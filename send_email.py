@@ -3,8 +3,8 @@
 #
 #
 # def send_email(email, height, average_height, count):
-#     from_email="okonkwomaduabuchi@gmail.com"
-#     from_password= "08063572194"
+#     from_email="email@gmail.com"
+#     from_password= "password"
 #     to_email = email
 #
 #
@@ -29,9 +29,9 @@ from email.mime.text import MIMEText
 def send_email(email, height, average_height, count):
     SMTP_SERVER = "smtp.mail.yahoo.com"
     SMTP_PORT = 587
-    SMTP_USERNAME = "themanlahind@yahoo.com"
-    SMTP_PASSWORD = "08063572194"
-    EMAIL_FROM = "themanlahind@yahoo.com"
+    SMTP_USERNAME = "myemail@yahoo.com"
+    SMTP_PASSWORD = "mypassword"
+    EMAIL_FROM = "myemail@yahoo.com"
     EMAIL_TO = email
     EMAIL_SUBJECT = "Height Data:"
     message="Hey dear, your height is<strong>%s</strong>. Average height of people witin your bracket is<strong> %s</strong> caluculated out %s of users" % (height, average_height, count)
